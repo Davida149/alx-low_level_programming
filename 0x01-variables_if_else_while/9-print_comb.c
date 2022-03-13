@@ -1,20 +1,20 @@
 #include<stdio.h>
 /**
- *main - prints all possible combination of single digit numbers
+ *main - prints numbers between 0 to 9 with commas and space
  *
  *Return: Alawys 0 (Success)
  */
 int main(void)
 {
-int a;
+int i;
 
-for (a = 49; a < 58; a++)
+	for (i = 48; i < 58; i++)
 	{
-		putchar(a);
-		if (a != 57)
+		putchar(i);
+		if (i != 57)
 		{
-		putchar(',');
-		putchar(' ');
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
