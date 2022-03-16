@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *main - a function that prints the alphabet, in lowercase, followed by \n.
+ *print_alphabet - a function that prints the alphabet, in lowercase
  *
  *
  *
- *Return: 0
+ *Return: void
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char c;
 
@@ -17,5 +17,4 @@ int main(void)
 		_putchar(c);
 	}
 	_putchar('\n');
-	return (0);
 }
