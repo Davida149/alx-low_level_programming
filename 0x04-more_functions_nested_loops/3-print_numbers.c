@@ -3,7 +3,7 @@
 /**
  *print_numbers - A function that prints numbers from 0-9
  *integer to be printed
- *Return: Alawys 0
+ *
  */
 
 void print_numbers(void)
@@ -15,5 +15,4 @@ void print_numbers(void)
 		_putchar(i);
 	}
 	putchar('\n');
-	return (0);
 }
