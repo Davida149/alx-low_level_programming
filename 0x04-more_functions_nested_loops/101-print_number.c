@@ -27,19 +27,20 @@ void print_number(int n)
 			++cnt;
 		}
 		temp2 = cnt;
-	while (temp2 > 1)
-	{
-		div *= 10;
-		--temp2;
-	}
-	for (i = 0; i < cnt; ++i)
-	{
-		result = n / div;
-		if (result < 0)
+		while (temp2 > 1)
+		{
+			div *= 10;
+			--temp2;
+		}
+		for (i = 0; i < cnt; ++i)
+		{
+			result = n / div;
+			if (result < 0)
 			result *= -1;
 			_putchar(result + '0');
 			n %= div;
 			div /= 10;
-	}
+		}
+
 	}
 }
