@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  **_strncat - two words
  *@dest: pointer to char parameter
