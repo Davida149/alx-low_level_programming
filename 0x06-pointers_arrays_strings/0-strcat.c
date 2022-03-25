@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strcat - function commute srtings
+ *_strcat - concatenate two strings
  * @dest: param pointer to a char
  * @src: param pointer to a char
  *
