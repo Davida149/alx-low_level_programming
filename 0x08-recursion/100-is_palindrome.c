@@ -3,7 +3,7 @@
  *len_str - function to print length of string
  *@str: pointer to string to get length
  *
- *Reeturn: length of string
+ *Return: length of string
  */
 int len_str(char *str)
 {
