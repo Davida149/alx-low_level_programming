@@ -7,15 +7,15 @@
  */
 int _sqrt_check(int m, int c)
 {
-	if (m * m == c)
+	if ((m * m) == c)
 	{
 		return (m);
 	}
-	else if (m * m > c)
+	else if ((m * m) > c)
 	{
 		return (-1);
 	}
-	return (_sqrt_check(c, m + 1));
+	return (_sqrt_check(m + 1, c));
 }
 /**
  *_sqrt_recursion - returns the natural square root of a number
@@ -25,7 +25,13 @@ int _sqrt_check(int m, int c)
  */
 int _sqrt_recursion(int n)
 {
-	if (n == 0)
-	return (0);
+	if (n == 1)
+	{
+		return (1);
+	}
+	else if
+	{
+		return (0);
+	}
 	return (sqrt_check(1, n));
 }
