@@ -11,7 +11,7 @@ int _sqrt_check(int c, int m)
 	{
 		return (m);
 	}
-	else if (m * m != c)
+	else if (m * m > c)
 	{
 		return (-1);
 	}
