@@ -5,7 +5,7 @@
  *@m: guess at square root
  *Return: -1 or sqrt of c
  */
-int _sqrt_check(int c, int m)
+int _sqrt_check(int m, int c)
 {
 	if (m * m == c)
 	{
@@ -27,5 +27,5 @@ int _sqrt_recursion(int n)
 {
 	if (n == 0)
 	return (0);
-	return (sqrt_check(n, 1));
+	return (sqrt_check(1, n));
 }
