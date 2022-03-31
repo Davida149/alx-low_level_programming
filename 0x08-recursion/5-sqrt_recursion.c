@@ -5,7 +5,7 @@
  *@m: guess at square root
  *Return: -1 or sqrt of c
  */
-int _sqrt_check(int m, int c)
+int _sqrt_check(int c, int m)
 {
 	if ((m * m) == c)
 	{
@@ -15,7 +15,7 @@ int _sqrt_check(int m, int c)
 	{
 		return (-1);
 	}
-	return (_sqrt_check(m + 1, c));
+	return (_sqrt_check(c, (m + 1)));
 }
 /**
  *_sqrt_recursion - returns the natural square root of a number
@@ -33,5 +33,5 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (sqrt_check(2, n));
+	return (sqrt_check(n, 2));
 }
