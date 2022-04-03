@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  *main - a function that prints its name followed by new line
  *@argc: argument count
