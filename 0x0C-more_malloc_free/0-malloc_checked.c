@@ -10,7 +10,9 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	void *ptr = malloc(sizeof(*ptr) * b);
+	void *ptr;
+	
+	ptr = malloc(b);
 
 	if (ptr != NULL)
 	{
@@ -18,8 +20,7 @@ void *malloc_checked(unsigned int b)
 	}
 	else if (ptr == NULL)
 	{
-		return (NULL);
-		_putchar('98');
+		exit (98);
 	}
 
 }
