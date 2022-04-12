@@ -3,7 +3,7 @@
 /**
  *main - prints name of file this was compiled from
  *@void: accepts nothing
- *return: void
+ *Return: void
  */
 
 int main(void)
