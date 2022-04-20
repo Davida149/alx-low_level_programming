@@ -13,7 +13,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	/*setting the requirements*/
 	if (size <= 0)
 		return (-1);
-	if (size && cmp)
+	if (array && cmp)
 	{	/*go through the loop and use the function pointer*/
 		for (i = idx = 0; i < size; i++)
 		{
