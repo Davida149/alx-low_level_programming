@@ -14,12 +14,13 @@ int int_index(int *array, int size, int (*cmp)(int))
 	if (size <= 0)
 		return (-1);
 	if (size && cmp)
-		/*go through the loop and use the function pointer*/
+	{	/*go through the loop and use the function pointer*/
 		for (i = 0; i < size; i++)
 		{
 			idx = cmp(array[i]);/*adding the return value*/
 			if (idx == 1)/*checks for the first true element*/
 				return (i);
 		}
-	return (-1);/*if program comes here, it means functions are not true*/
+	}
+	/*return (-1);if program comes here, it means functions are not true*/
 }
