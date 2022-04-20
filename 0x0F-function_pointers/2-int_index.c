@@ -22,5 +22,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 				return (i);
 		}
 	}
-	/*return (-1);if program comes here, it means functions are not true*/
+	return (-1);/*if program comes here, it means functions are not true*/
 }
