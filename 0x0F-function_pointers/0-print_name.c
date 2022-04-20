@@ -7,5 +7,9 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	f(name);
+	/*check if name and f are not null*/
+	if (name && f)
+	{
+		f(name);
+	}
 }
